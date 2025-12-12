@@ -1,4 +1,4 @@
-# Invoicer (Laravel)
+# Invoice (Laravel)
 
 ## Setup
 1. `git clone https://github.com/abdalftahmohamed/newInvoice.git`

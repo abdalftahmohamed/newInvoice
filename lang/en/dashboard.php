@@ -14,6 +14,9 @@ return [
     */
 
     'dashboard' => 'Dashboard',
+    'login' => 'Login',
+    'password_confirmation' => 'Password Confirmation',
+    'register' => 'Register',
     'invoice_number' => 'Invoice Number',
     'download' => 'Download',
     'generate' => 'GeneratePdf',

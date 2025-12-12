@@ -26,9 +26,11 @@ Route::group(
         'prefix' => 'dashboard',
     ],
     function () {
-        Route::controller(AuthController::class)->name('login.')->group(function () {
-            Route::get('/login', 'showLoginForm')->name('showLoginForm');
-            Route::post('/login', 'login')->name('post');
+        Route::controller(AuthController::class)->group(function () {
+            Route::get('/login', 'showLoginForm')->name('login.showLoginForm');
+            Route::post('/login', 'login')->name('login.post');
+            Route::get('/register', 'showRegisterForm')->name('register.showRegisterForm');
+            Route::post('/register', 'register')->name('register.post');
             Route::post('/logout', 'logout')->name('logout');
 
         });

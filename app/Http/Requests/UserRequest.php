@@ -26,15 +26,15 @@ class UserRequest extends FormRequest
             'name'=>['required' , 'min:2' , 'max:60'],
             'email'=>['required' , 'email' , 'max:100' , Rule::unique('users' , 'email')->ignore($this->id)],
             'role_id'=>['required' , 'exists:roles,id'],
-            'status'=>['in:1,0'],
+            'status'=>['nullable','in:1,0'],
         ];
 
         if(in_array($this->method() , ['PUT' , 'PATCH'])){
-            $rules['password']              =['nullable' , 'confirmed' , 'min:8' , 'max:100'];
-            $rules['password_confirmation'] =['nullable'];
+            $data['password']              =['nullable' , 'confirmed' , 'min:8' , 'max:100'];
+            $data['password_confirmation'] =['nullable'];
         }else{
-            $rules['password']=['required' , 'confirmed' , 'min:8' , 'max:100'];
-            $rules['password_confirmation']=['required'];
+            $data['password']=['required' , 'confirmed' , 'min:8' , 'max:100'];
+            $data['password_confirmation']=['required'];
         }
         return $data;
     }

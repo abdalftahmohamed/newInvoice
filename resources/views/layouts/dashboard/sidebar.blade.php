@@ -54,8 +54,10 @@
             @can('clients')
                 <li class=" nav-item {{ Request::is('*/clients*') ? 'open' : '' }}">
                     <a href="#"><i class="la la-home">
-                        </i><span class="menu-title" data-i18n="nav.dash.main">@lang('dashboard.clients')</span><span
-                            class="badge badge badge-info badge-pill float-right mr-2">0</span></a>
+                        </i><span class="menu-title" data-i18n="nav.dash.main">@lang('dashboard.clients')</span>
+{{--                        <span--}}
+{{--                            class="badge badge badge-info badge-pill float-right mr-2">0</span>--}}
+                    </a>
                     <ul class="menu-content">
                         <li class="{{ Request::is('*/clients') ? 'active' : '' }}"><a class="menu-item"
                                                                                          href="{{ route('dashboard.clients.index') }}"
@@ -67,8 +69,10 @@
             @can('invoices')
                 <li class=" nav-item {{ Request::is('*/invoices*') ? 'open' : '' }}">
                     <a href="#"><i class="la la-home">
-                        </i><span class="menu-title" data-i18n="nav.dash.main">@lang('dashboard.invoices')</span><span
-                            class="badge badge badge-info badge-pill float-right mr-2">0</span></a>
+                        </i><span class="menu-title" data-i18n="nav.dash.main">@lang('dashboard.invoices')</span>
+{{--                        <span--}}
+{{--                            class="badge badge badge-info badge-pill float-right mr-2">0</span>--}}
+                    </a>
                     <ul class="menu-content">
                         <li class="{{ Request::is('*/invoices') ? 'active' : '' }}"><a class="menu-item"
                                                                                      href="{{ route('dashboard.invoices.index') }}"

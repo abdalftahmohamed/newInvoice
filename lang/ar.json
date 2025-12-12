@@ -1,0 +1,17 @@
+{
+    "The :attribute must contain at least one letter.": "The :attribute must contain at least one letter.",
+    "The :attribute must contain at least one number.": "The :attribute must contain at least one number.",
+    "The :attribute must contain at least one symbol.": "The :attribute must contain at least one symbol.",
+    "The :attribute must contain at least one uppercase and one lowercase letter.": "The :attribute must contain at least one uppercase and one lowercase letter.",
+    "The given :attribute has appeared in a data leak. Please choose a different :attribute.": "The given :attribute has appeared in a data leak. Please choose a different :attribute.",
+    "name": "الاسم",
+    "Uh Oh! Internal Server Error!": "خطأ في النظام",
+    "Error 404 Dashboard": "خطأ 404",
+    "Error 403 Dashboard": "خطأ 403",
+    "Access Denied/Forbidden !": "غير مصرح لك بالدخول الي هنا !",
+    "Uh Oh! Not Found": "غير موجوده",
+    "Advanced search": "البحث المتقدم",
+    "Back to Home": "الرجوع للخلف",
+    "Page Not Found !": "هذه الصفحة غير موجوده",
+    "Success!": "تم بنجاح!"
+}
